@@ -19,7 +19,7 @@ public class FirstMobileTest extends TestBase {
                  $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click());
         step("Type search", () -> {
                  $(MobileBy.AccessibilityId("Search Wikipedia")).click();
-                 $(MobileBy.id("org.wikipedia.alpha:id/search_src_text")).setValue("Wiki"); });
+                 $(MobileBy.id("org.wikipedia.alpha:id/search_src_text")).setValue("Selenide"); });
         step("Verify content found", () ->
                 $$(byClassName("android.widget.TextView")).shouldHave(sizeGreaterThan(0)));
 
