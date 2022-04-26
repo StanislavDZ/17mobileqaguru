@@ -7,16 +7,16 @@ import org.aeonbits.owner.Config;
 })
 public interface ValidationConfig extends Config {
 
-    @Key("user")
+    //@Key("user")
     String user();
 
-    @Key("password")
+    //@Key("password")
     String password();
 
-    @Key("app")
+    //@Key("app")
     String app();
 
-    @Key("url")
+    //@Key("url")
     String url();
 
 
