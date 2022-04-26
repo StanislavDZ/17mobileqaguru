@@ -16,7 +16,9 @@ public class FirstMobileTest extends TestBase {
     void searchNewWikiTest() {
 
         step("Skip Language", () ->
-                 $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).submit());
+                $((MobileBy.AccessibilityId("Skip"))
+                        // $(MobileBy.id("org.wikipedia.alpha:id/android.widget.TextViewandroid.widget.TextView")).submit());
+                 $(MobileBy.id("android.widget.FrameLayout:id/fragment_onboarding_skip_button")).submit());
         step("Type search", () -> {
                  $(MobileBy.AccessibilityId("Search Wikipedia")).click();
                  $(MobileBy.id("org.wikipedia.alpha:id/search_src_text")).setValue("Selenide"); });
